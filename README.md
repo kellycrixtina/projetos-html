@@ -1,2 +1,2 @@
 # projetos-html
- Projetos HTML que fiz para praticar o que aprendi
+ Projetos que fiz para praticar o que aprendi.
