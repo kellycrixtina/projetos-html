@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>   
+<!--se deixar action vazio, ele vai enviar o conteúdo preenchido para mesma página-->
+<!--metdhod="POST" não mostra as informações do usuário na URL,
+    com "GET" mostra na URL: https://pagina.com/?name=MariadaSilva&email=maria@gmail.com-->
+<form action="" method="POST" id="one-form" autocomplete="of">
+<!--autocomplete serve para auto completar as informações quando entrar na página novamente -->
+    <fieldset>
+        <legend><strong>Entre em  contato </strong></legend>
+<!-- Lembrete: colocar option dentro do select,
+    para as opções não ficarem do lado de fora-->
+        <label for="topic"><strong>Assunto:</strong></label>
+        <select name="choice" id="topic">
+            <option value="suporte">suporte</option>
+            <option value="sugestão">sugestão</option>
+            <option value="reclamação">reclamação</option>
+        </select>
+        <br>
+        <br>
+        <!--LABEL garante melhor acessibilidade -->
+        <label for="name">NOME COMPLETO</label> <br>
+        <input type="text" name="name" id="name"
+        placeholder="Exemplo: Maria da Silva">
+        <br>
+        <br>
+        <label for="email">SEU E-MAIL</label> <br>
+        <!-- cada navegador pode mostrar o type de uma forma diferente, geralmente, o seu aspecto visual -->
+        <input type="email" name="email" id="name"
+        placeholder="Exemplo: kellycristinadev@gmail.com">
+        <br>
+        <br>
+        <label for="message">MENSAGEM</label> <br>
+        <textarea type="message" name="message" id="message"
+        placeholder="Digite aqui sua mensagem"
+        cols="21" rows="10"></textarea>
+        <br>
+        <br>
+        <input type="checkbox" name="news" id="news">
+        <label for="news">Aceito receber novidades por e-mail</label>
+        <br>
+        <br>
+        <button type="submit" form="one-form">Enviar</button>
+    </fieldset>
+</form>
+</body>
+</html>
